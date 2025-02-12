@@ -79,30 +79,42 @@ const productDetails = [
 
 const employeeBenefits = [
   {
-    title: "Compensation & Benefits",
+    title: "Gehälter & Vergütung",
     details: [
-      "Above-market base salary",
-      "Annual profit sharing",
-      "Stock options after 2 years",
-      "Additional retirement benefits"
+      "Fabrikarbeiter: 52.000-65.000€/Jahr",
+      "Teamleiter: 68.000-82.000€/Jahr",
+      "Fabrikleiter: 95.000-120.000€/Jahr",
+      "Manager: 110.000-150.000€/Jahr",
+      "Zusätzlich: 13. Monatsgehalt",
+      "Jährlicher Bonus bis zu 20%",
+      "Aktienoptionen nach 2 Jahren"
     ]
   },
   {
     title: "Work-Life Balance",
     details: [
-      "30 days annual leave",
-      "Flexible working hours",
-      "Remote work options",
-      "Sabbatical after 3 years"
+      "30 Tage Urlaub",
+      "Flexible Arbeitszeiten",
+      "4-Tage Woche Option",
+      "Sabbatical nach 3 Jahren"
     ]
   },
   {
-    title: "Health & Wellbeing",
+    title: "Gesundheit & Wohlbefinden",
     details: [
-      "Premium health insurance",
-      "Mental health program",
-      "Sports & fitness allowance",
-      "Healthy meals in cafeteria"
+      "Premium Krankenversicherung",
+      "Mentales Gesundheitsprogramm",
+      "Sport- & Fitnesszuschuss",
+      "Bio-Kantine mit kostenlosen Mahlzeiten"
+    ]
+  },
+  {
+    title: "Zusätzliche Leistungen",
+    details: [
+      "Kostenlose E-Bike Leasing",
+      "ÖPNV-Ticket",
+      "Kinderbetreuungszuschuss",
+      "Weiterbildungsbudget: 5.000€/Jahr"
     ]
   }
 ];
@@ -243,6 +255,39 @@ function Sustainability() {
                       <li key={goalIndex} className="flex items-start text-gray-300">
                         <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
                         {goal}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Mitarbeiter-Benefits Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-32"
+          >
+            <h2 className="text-4xl font-extrabold text-center mb-16 text-gradient-animation bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400 text-transparent bg-clip-text">
+              Faire Vergütung & Benefits
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {employeeBenefits.map((benefit, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.02, translateY: -5 }}
+                  className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 group"
+                >
+                  <h3 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                    {benefit.title}
+                  </h3>
+                  <ul className="space-y-4">
+                    {benefit.details.map((detail, detailIndex) => (
+                      <li key={detailIndex} className="flex items-start text-gray-300">
+                        <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
+                        {detail}
                       </li>
                     ))}
                   </ul>

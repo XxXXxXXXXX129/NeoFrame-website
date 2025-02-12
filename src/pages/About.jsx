@@ -239,23 +239,87 @@ function About() {
             className="mb-32"
           >
             <h3 className="text-4xl md:text-6xl font-extrabold text-center mb-16 text-gradient-animation bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400 text-transparent bg-clip-text">
-              Our Journey
+              Unsere Produktionsstätte
             </h3>
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.02, translateY: -5 }}
-                  className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 group card-shine"
-                >
-                  <div className="flex items-center mb-4">
-                    <div className="text-5xl font-extrabold text-emerald-400 mb-8 group-hover:scale-110 transition-transform bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">{milestone.year}</div>
-                    <div className="ml-4 h-0.5 flex-1 bg-emerald-400"></div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="space-y-8">
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 group">
+                  <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Hauptproduktion</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start text-gray-300">
+                      <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
+                      10.000 m² Produktionsfläche
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
+                      Modernste Robotik & Automation
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
+                      100% Solarenergie-betrieben
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 group">
+                  <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Forschung & Entwicklung</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start text-gray-300">
+                      <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
+                      2.000 m² F&E-Labor
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
+                      KI-Entwicklungszentrum
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
+                      Prototyping-Werkstatt
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Fabrik-Lageplan */}
+              <div className="relative">
+                <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 h-full">
+                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 mix-blend-overlay rounded-2xl"></div>
+                  <div className="relative z-10">
+                    <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Fabrik-Lageplan</h4>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="bg-gray-700/50 p-4 rounded-lg">
+                        <div className="text-emerald-400 mb-2">Gebäude A</div>
+                        <div className="text-sm text-gray-300">Hauptproduktion</div>
+                      </div>
+                      <div className="bg-gray-700/50 p-4 rounded-lg">
+                        <div className="text-emerald-400 mb-2">Gebäude B</div>
+                        <div className="text-sm text-gray-300">F&E-Zentrum</div>
+                      </div>
+                      <div className="bg-gray-700/50 p-4 rounded-lg">
+                        <div className="text-emerald-400 mb-2">Gebäude C</div>
+                        <div className="text-sm text-gray-300">Logistik</div>
+                      </div>
+                      <div className="bg-gray-700/50 p-4 rounded-lg">
+                        <div className="text-emerald-400 mb-2">Gebäude D</div>
+                        <div className="text-sm text-gray-300">Büros & Kantine</div>
+                      </div>
+                    </div>
+                    <div className="mt-8 space-y-4">
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-gray-300">Gesamtfläche:</span>
+                        <span className="text-emerald-400">15.000 m²</span>
+                      </div>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-gray-300">Mitarbeiter vor Ort:</span>
+                        <span className="text-emerald-400">250+</span>
+                      </div>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-gray-300">Produktionskapazität:</span>
+                        <span className="text-emerald-400">10.000 Einheiten/Monat</span>
+                      </div>
+                    </div>
                   </div>
-                  <h4 className="text-2xl font-extrabold mb-2 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">{milestone.title}</h4>
-                  <p className="text-gray-300">{milestone.description}</p>
-                </motion.div>
-              ))}
+                </div>
+              </div>
             </div>
           </motion.div>
 
