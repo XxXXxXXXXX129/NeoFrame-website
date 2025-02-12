@@ -79,42 +79,42 @@ const productDetails = [
 
 const employeeBenefits = [
   {
-    title: "Gehälter & Vergütung",
+    title: "Salaries & Compensation",
     details: [
-      "Fabrikarbeiter: 52.000-65.000€/Jahr",
-      "Teamleiter: 68.000-82.000€/Jahr",
-      "Fabrikleiter: 95.000-120.000€/Jahr",
-      "Manager: 110.000-150.000€/Jahr",
-      "Zusätzlich: 13. Monatsgehalt",
-      "Jährlicher Bonus bis zu 20%",
-      "Aktienoptionen nach 2 Jahren"
+      "Factory Workers: €52,000-65,000/year",
+      "Team Leaders: €68,000-82,000/year",
+      "Factory Managers: €95,000-120,000/year",
+      "Senior Managers: €110,000-150,000/year",
+      "Additional: 13th Month Salary",
+      "Annual Bonus up to 20%",
+      "Stock Options after 2 years"
     ]
   },
   {
     title: "Work-Life Balance",
     details: [
-      "30 Tage Urlaub",
-      "Flexible Arbeitszeiten",
-      "4-Tage Woche Option",
-      "Sabbatical nach 3 Jahren"
+      "30 Days Annual Leave",
+      "Flexible Working Hours",
+      "4-Day Week Option",
+      "Sabbatical after 3 years"
     ]
   },
   {
-    title: "Gesundheit & Wohlbefinden",
+    title: "Health & Wellbeing",
     details: [
-      "Premium Krankenversicherung",
-      "Mentales Gesundheitsprogramm",
-      "Sport- & Fitnesszuschuss",
-      "Bio-Kantine mit kostenlosen Mahlzeiten"
+      "Premium Health Insurance",
+      "Mental Health Program",
+      "Sports & Fitness Allowance",
+      "Organic Cafeteria with Free Meals"
     ]
   },
   {
-    title: "Zusätzliche Leistungen",
+    title: "Additional Benefits",
     details: [
-      "Kostenlose E-Bike Leasing",
-      "ÖPNV-Ticket",
-      "Kinderbetreuungszuschuss",
-      "Weiterbildungsbudget: 5.000€/Jahr"
+      "Free E-Bike Leasing",
+      "Public Transport Pass",
+      "Childcare Subsidy",
+      "Training Budget: €5,000/year"
     ]
   }
 ];
@@ -263,7 +263,7 @@ function Sustainability() {
             </div>
           </motion.div>
 
-          {/* Mitarbeiter-Benefits Section */}
+          {/* Employee Benefits Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -271,7 +271,7 @@ function Sustainability() {
             className="mb-32"
           >
             <h2 className="text-4xl font-extrabold text-center mb-16 text-gradient-animation bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400 text-transparent bg-clip-text">
-              Faire Vergütung & Benefits
+              Fair Compensation & Benefits
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {employeeBenefits.map((benefit, index) => (

@@ -239,82 +239,92 @@ function About() {
             className="mb-32"
           >
             <h3 className="text-4xl md:text-6xl font-extrabold text-center mb-16 text-gradient-animation bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400 text-transparent bg-clip-text">
-              Unsere Produktionsstätte
+              Our Production Facility
             </h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="space-y-8">
                 <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 group">
-                  <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Hauptproduktion</h4>
+                  <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Main Production</h4>
                   <ul className="space-y-4">
                     <li className="flex items-start text-gray-300">
                       <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
-                      10.000 m² Produktionsfläche
+                      10,000 m² Production Area
                     </li>
                     <li className="flex items-start text-gray-300">
                       <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
-                      Modernste Robotik & Automation
+                      State-of-the-art Robotics & Automation
                     </li>
                     <li className="flex items-start text-gray-300">
                       <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
-                      100% Solarenergie-betrieben
+                      100% Solar-powered
                     </li>
                   </ul>
                 </div>
                 <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300 group">
-                  <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Forschung & Entwicklung</h4>
+                  <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Research & Development</h4>
                   <ul className="space-y-4">
                     <li className="flex items-start text-gray-300">
                       <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
-                      2.000 m² F&E-Labor
+                      2,000 m² R&D Laboratory
                     </li>
                     <li className="flex items-start text-gray-300">
                       <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
-                      KI-Entwicklungszentrum
+                      AI Development Center
                     </li>
                     <li className="flex items-start text-gray-300">
                       <span className="w-6 h-6 mr-3 flex items-center justify-center text-emerald-400">•</span>
-                      Prototyping-Werkstatt
+                      Prototyping Workshop
                     </li>
                   </ul>
                 </div>
               </div>
 
-              {/* Fabrik-Lageplan */}
+              {/* Factory Layout */}
               <div className="relative">
                 <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 h-full">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 mix-blend-overlay rounded-2xl"></div>
                   <div className="relative z-10">
-                    <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Fabrik-Lageplan</h4>
+                    <h4 className="text-2xl font-extrabold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">Factory Layout</h4>
+                    
+                    {/* Factory Layout Image */}
+                    <div className="mb-8 rounded-lg overflow-hidden">
+                      <img
+                        src="/NeoFrame-website/images/Sundern Fabrik Plan Jan 22 2016.jpg"
+                        alt="Factory Layout Plan"
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-gray-700/50 p-4 rounded-lg">
-                        <div className="text-emerald-400 mb-2">Gebäude A</div>
-                        <div className="text-sm text-gray-300">Hauptproduktion</div>
+                        <div className="text-emerald-400 mb-2">Building A</div>
+                        <div className="text-sm text-gray-300">Main Production</div>
                       </div>
                       <div className="bg-gray-700/50 p-4 rounded-lg">
-                        <div className="text-emerald-400 mb-2">Gebäude B</div>
-                        <div className="text-sm text-gray-300">F&E-Zentrum</div>
+                        <div className="text-emerald-400 mb-2">Building B</div>
+                        <div className="text-sm text-gray-300">R&D Center</div>
                       </div>
                       <div className="bg-gray-700/50 p-4 rounded-lg">
-                        <div className="text-emerald-400 mb-2">Gebäude C</div>
-                        <div className="text-sm text-gray-300">Logistik</div>
+                        <div className="text-emerald-400 mb-2">Building C</div>
+                        <div className="text-sm text-gray-300">Logistics</div>
                       </div>
                       <div className="bg-gray-700/50 p-4 rounded-lg">
-                        <div className="text-emerald-400 mb-2">Gebäude D</div>
-                        <div className="text-sm text-gray-300">Büros & Kantine</div>
+                        <div className="text-emerald-400 mb-2">Building D</div>
+                        <div className="text-sm text-gray-300">Offices & Cafeteria</div>
                       </div>
                     </div>
                     <div className="mt-8 space-y-4">
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-300">Gesamtfläche:</span>
-                        <span className="text-emerald-400">15.000 m²</span>
+                        <span className="text-gray-300">Total Area:</span>
+                        <span className="text-emerald-400">15,000 m²</span>
                       </div>
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-300">Mitarbeiter vor Ort:</span>
+                        <span className="text-gray-300">On-site Employees:</span>
                         <span className="text-emerald-400">250+</span>
                       </div>
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-300">Produktionskapazität:</span>
-                        <span className="text-emerald-400">10.000 Einheiten/Monat</span>
+                        <span className="text-gray-300">Production Capacity:</span>
+                        <span className="text-emerald-400">10,000 units/month</span>
                       </div>
                     </div>
                   </div>
