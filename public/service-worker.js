@@ -4,10 +4,11 @@ const urlsToCache = [
   '/index.html',
   '/manifest.json',
   '/logo.svg',
-  '/Futuristic AI Art.jpeg',
-  '/Futuristic AI Art (1).jpeg',
-  '/Futuristic AI Art (2).jpeg',
-  '/Futuristic AI Art 3.jpeg'
+  '/images/Futuristic AI Art.jpeg',
+  '/images/Futuristic AI Art (1).jpeg',
+  '/images/Futuristic AI Art (2).jpeg',
+  '/images/Futuristic AI Art 3.jpeg',
+  '/images/Flux_Dev_A_product_showcase_featuring_three_squareshaped_digit_1.jpeg'
 ];
 
 self.addEventListener('install', (event) => {

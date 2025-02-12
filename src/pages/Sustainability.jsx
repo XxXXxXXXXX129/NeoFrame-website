@@ -177,12 +177,12 @@ function Sustainability() {
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <img
-                    src="/Futuristic AI Art 3.jpeg"
+                    src="/NeoFrame-website/images/Futuristic AI Art 3.jpeg"
                     alt="NeoFrame Sustainable Technology"
                     className="w-full h-full object-cover rounded-2xl"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = "/Futuristic AI Art.jpeg";
+                      e.target.src = "/NeoFrame-website/images/Futuristic AI Art.jpeg";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
