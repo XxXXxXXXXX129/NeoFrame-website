@@ -228,12 +228,12 @@ function Features() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 mix-blend-overlay"></div>
                   <img
-                    src="/Futuristic AI Art.jpeg"
+                    src="/NeoFrame-website/images/Futuristic AI Art.jpeg"
                     alt="NeoFrame AI Art Display"
                     className="w-full h-full object-cover rounded-2xl"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = "/Futuristic AI Art (1).jpeg";
+                      e.target.src = "/NeoFrame-website/images/Futuristic AI Art (1).jpeg";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
