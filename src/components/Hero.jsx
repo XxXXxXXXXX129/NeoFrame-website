@@ -220,7 +220,7 @@ function Hero() {
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 mix-blend-overlay"></div>
                     <img
-                      src="/Flux_Dev_A_product_showcase_featuring_three_squareshaped_digit_1.jpeg"
+                      src="/NeoFrame-website/images/Flux_Dev_A_product_showcase_featuring_three_squareshaped_digit_1.jpeg"
                       alt="NeoFrame Product Showcase"
                       className="w-full h-full object-cover rounded-2xl"
                     />
